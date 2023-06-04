@@ -16,8 +16,8 @@
 		153A98C22A219E17003133C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 153A98C02A219E17003133C0 /* Main.storyboard */; };
 		153A98C42A219E1A003133C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 153A98C32A219E1A003133C0 /* Assets.xcassets */; };
 		153A98C72A219E1A003133C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 153A98C52A219E1A003133C0 /* LaunchScreen.storyboard */; };
+		156C8BA02A2C5EAD00113D78 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C8B9F2A2C5EAD00113D78 /* DatabaseHelper.swift */; };
 		15A137DF2A2C47E800A00DC7 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 15A137DE2A2C47E800A00DC7 /* RealmSwift */; };
-		15A137E12A2C485E00A00DC7 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A137E02A2C485E00A00DC7 /* DatabaseHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +32,7 @@
 		153A98C32A219E1A003133C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		153A98C62A219E1A003133C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		153A98C82A219E1A003133C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		15A137E02A2C485E00A00DC7 /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DatabaseHelper.swift; path = ../../../../Downloads/DatabaseHelper.swift; sourceTree = "<group>"; };
+		156C8B9F2A2C5EAD00113D78 /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +78,7 @@
 		151FCAC52A2986ED00596F99 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				156C8B9F2A2C5EAD00113D78 /* DatabaseHelper.swift */,
 				153A98BA2A219E17003133C0 /* AppDelegate.swift */,
 				153A98BC2A219E17003133C0 /* SceneDelegate.swift */,
 				153A98C32A219E1A003133C0 /* Assets.xcassets */,
@@ -108,7 +109,6 @@
 				151FCAC42A2986C500596F99 /* ViewModel */,
 				151FCAC52A2986ED00596F99 /* Others */,
 				153A98C82A219E1A003133C0 /* Info.plist */,
-				15A137E02A2C485E00A00DC7 /* DatabaseHelper.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -193,7 +193,7 @@
 				153A98BF2A219E17003133C0 /* ViewController.swift in Sources */,
 				151FCAC72A29879700596F99 /* ViewControllerViewModel.swift in Sources */,
 				151FCAC02A2985B200596F99 /* Petetions.swift in Sources */,
-				15A137E12A2C485E00A00DC7 /* DatabaseHelper.swift in Sources */,
+				156C8BA02A2C5EAD00113D78 /* DatabaseHelper.swift in Sources */,
 				153A98BB2A219E17003133C0 /* AppDelegate.swift in Sources */,
 				151FCAC22A2985CE00596F99 /* Petetion.swift in Sources */,
 				153A98BD2A219E17003133C0 /* SceneDelegate.swift in Sources */,
