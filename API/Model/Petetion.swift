@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import RealmSwift
+
+class Petition: Object, Decodable {
+    @Persisted var title: String
+    @Persisted var body: String
+}

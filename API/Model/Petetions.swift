@@ -6,3 +6,8 @@
 //
 
 import Foundation
+import RealmSwift
+
+class Petitions: Object, Decodable {
+    @Persisted var results: List<Petition>
+}

@@ -8,14 +8,25 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
     @IBOutlet var tableView: UITableView!
     
-    let viewModel: ViewControllerViewModel? = nil
+    var viewModel: ViewControllerViewModel? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        
+        viewModel = ViewControllerViewModel()
+        viewModel?.delegate = self
+        
         viewModel?.apiCall()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewModel?.petitions = DatabaseHelper.shared.getPetitions()
     }
 
 
@@ -31,5 +42,13 @@ extension ViewController: UITableViewDataSource {
         cell.textLabel?.text = viewModel?.petitions[indexPath.row].title
         cell.detailTextLabel?.text = viewModel?.petitions[indexPath.row].body
         return cell
+    }
+}
+
+extension ViewController: ViewControllerDelegate {
+    func didUpdateData(_ viewModel: ViewControllerViewModel) {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
 }
